@@ -1,0 +1,53 @@
+:root {
+    --title-color: #ffffff;
+    --detail-color: hsl(228, 34%, 66%);
+    --primary-color: #34cb79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background: hsl(232, 19%, 15%);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--title-color);
+    font-family: Inter, sans-serif;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--detail-color);
+    font-family: Inter, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: Inter, sans-serif;
+
+}
+
+h3 {
+    font-size:15px;
+   
+    color: hsl(228, 34%, 66%);
+}
+
+/*vh = viewport height*/
