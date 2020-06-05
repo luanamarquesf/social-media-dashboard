@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+  </head>
+
+  <body>
+    <div id="page-home-dark">
+      <div class="content">
+        <header>
+          <div class="text-detail">
+            <h2>Social Media Dashboard</h2>
+            <h4>Total Followers 700</h4>
+            <a href="#">
+              <img src="/images/iconmonstr-plus-2.svg" alt="">
+            </a>
+
+          </div>
+          <div class="darkmode">
+            <input type="checkbox" name="setLightMode" id="checktype">
+            <h4>Dark Mode</h4>
+          </div>
+
+        </header>
+
+        <main>
+          {% if total > 0 %}
+            <div class="cards">
+              {% for place in places %}
+                <div class="card">
+                  <div class="top">
+                    <img src="/images/icon-facebook.svg" alt="">
+                    <h4>{{place.nick}}</h4>
+                  </div>
+                  <div class="primer">
+                    <h1>{{place.name}}</h1>
+                    <h4>L E G E N D A</h4>
+                  </div>
+
+                  <div class="second">
+                    <img src="/images/icon-up.svg" alt="">
+                    <h6>Estatística</h6>
+                  </div>
+
+                </div>
+              {% endfor %}
+
+            </div>
+            {%else%}
+            <h4>
+              <strong>Nenhum
+              </strong>local encontrado</h4>
+          {% endif %}
+
+        </main>
+
+      </div>
+      {%include "partials/modal.html"%}
+
+    </form>
+  </div>
+</div>
+
+</body>
+<script src="/scripts/index.js"></script>
+<script src="/scripts/pages.js"></script>
+
+</html>

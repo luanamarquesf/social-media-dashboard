@@ -1,0 +1,27 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "Challenge from Frontend Mentor",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanamarquesf/social-media-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanamarquesf/social-media-dashboard/issues"
+  },
+  "homepage": "https://github.com/luanamarquesf/social-media-dashboard#readme"
+}

@@ -1,0 +1,25 @@
+{#FAZER UMA TELA PARA CADASTRAR UM NOVO CARD: IMAGEM, NOME, TIPO DE CARD: INSTA, FACE#}
+<div id="modal" class="hide">
+
+  <div class="content">
+    <header>
+      <a href="/">Fechar</a>
+    </header>
+    <form action="/savepoint" method="POST">
+
+      <label for="savepoint">Novo Card</label>
+      <div class="field">
+        <input type="text" name="name" placeholder="Nome" required="required">
+      </div>
+      <div class="field2">
+        <input type="text" name="nick" placeholder="@" required="required">
+
+      </div>
+      <button type="submit">
+        <img src="/images/add.svg" alt="">
+      </button>
+    </form>
+
+  </div>
+
+</div>

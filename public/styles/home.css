@@ -1,0 +1,187 @@
+#page-home-dark {
+    height: 100vh;
+    margin: 40px 10px;
+}
+
+#page-home-dark .content {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home-dark .content header .text-detail a img{
+    padding-top: 15px;
+   
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h4 {
+    font-family: Inter, sans-serif;
+}
+
+.darkmode h6 {
+    float: right;
+}
+
+.cards {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    border: 2px solid var(--card-background);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--card-background);
+    width: 200px;
+    justify-content: center;
+    border-image-source: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1 0 0 0;
+}
+
+
+.card-1 {
+    border: 2px solid var(--card-background);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--card-background);
+    width: 200px;
+    justify-content: center;
+    border-top-color: hsl(348, 97%, 39%);
+}
+
+.card-2 {
+    border: 2px solid var(--card-background);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--card-background);
+    width: 200px;
+    justify-content: center;
+    border-image-source: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1 0 0 0;
+}
+
+.card-4 {
+    border: 2px solid var(--card-background);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--card-background);
+    width: 200px;
+    justify-content: center;
+    border-top-color: hsl(203, 89%, 53%);
+}
+
+main .top {
+    flex-direction: column;
+    align-items: center;
+}
+
+main .top h4 {
+    float: right;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+main .primer {
+    padding-top: 10px;
+}
+
+main .primer h1 {
+    font-size: 50px;
+    font-weight: 700px;
+}
+
+.second {
+    padding-top: 20px;
+}
+
+.second h6 {
+    color: hsl(163, 72%, 41%);
+    float: right;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+.card-1 .second h6 {
+    color: hsl(356, 69%, 56%);
+    float: right;
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+
+input[type=checkbox] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 1px #BEBCBE;
+    transition: 0.5s;
+}
+
+input:checked[type=checkbox] {
+    background: hsl(230, 22%, 74%);
+}
+
+input[type=checkbox]::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: hsl(230, 17%, 14%);
+    border-radius: 20px;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px #BEBCBE;
+    transition: 0.5s;
+    -webkit-appearance: none;
+}
+
+input:checked[type=checkbox]::before {
+    left: 20px;
+}
+
+body::after {
+    top: 180px;
+    right: 0;
+    left: 0;
+    content: "";
+    position: absolute;
+    background: var(--background);
+    bottom: 0;
+    z-index: -1;
+}
